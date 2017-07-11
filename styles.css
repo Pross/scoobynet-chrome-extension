@@ -1,0 +1,19 @@
+/* Ads */
+#sidebar_ads_container,
+.ibautomotive,
+aside[id^="div-gpt-ad"],
+.large-ads,
+.top-large-ads {
+	display: none;
+}
+
+/* subscription nag */
+#vbseo_vhtml_0,
+form#notices {
+	display: none;
+}
+
+/* search nag */
+td:nth-of-type(1) > div:nth-of-type(1) > strong {
+	display: none;
+}
