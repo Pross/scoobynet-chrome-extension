@@ -3,6 +3,7 @@
 .ibautomotive,
 aside[id^="div-gpt-ad"],
 .large-ads,
+#right-rail,
 .top-large-ads {
 	display: none;
 }
