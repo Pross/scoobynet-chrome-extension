@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         Better Scoobynet
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       Pross
 // @match        https://www.scoobynet.com/*
-// @require       https://code.jquery.com/jquery-1.11.0.min.js
+// @require      https://code.jquery.com/jquery-1.11.0.min.js
+// @updateURL    https://raw.githubusercontent.com/Pross/scoobynet-chrome-extension/master/user.js
+// @downloadURL  https://raw.githubusercontent.com/Pross/scoobynet-chrome-extension/master/user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
