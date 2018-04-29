@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Better Scoobynet
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       Pross
 // @match        https://www.scoobynet.com/*
@@ -34,7 +34,8 @@
         '#gpt-adslot-3',
         '#gpt-adslot-4',
         '#gpt-adslot-5',
-        '#qbox_widget'
+        '#qbox_widget',
+        '.viglinkAmazon'
     ];
 
     for (var i = 0, len = elements.length; i < len; i++) {
