@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Better Scoobynet
-// @version      0.3
+// @version      0.4
 // @description  try to take over the world!
 // @author       Pross
 // @match        https://www.scoobynet.com/*
@@ -12,6 +12,9 @@
 
 (function() {
     'use strict';
+    $('.kxct').remove();
+    $('#main-content').css('width', '100%');
+    $('.threadbit .lastpost').css('width', '10%');
 
     var elements = [
         '#sidebar_ads_container',
@@ -41,6 +44,4 @@
     for (var i = 0, len = elements.length; i < len; i++) {
         GM_addStyle( elements[i] + '{display:none !important}' );
     }
-
-    $('.kxct').remove();
 })();
