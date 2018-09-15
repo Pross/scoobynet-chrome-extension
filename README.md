@@ -1,6 +1,6 @@
 # Remove all the crap from ScoobyNet forums.
 
-This TamperMonkey script version will self update. 
+This TamperMonkey script will self update. 
 
 # Install TamperMonkey extension.
 
