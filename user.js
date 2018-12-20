@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Better Scoobynet
-// @version      0.5
+// @version      0.6
 // @description  try to take over the world!
 // @author       Pross
 // @match        https://www.scoobynet.com/*
@@ -13,6 +13,10 @@
 (function() {
     'use strict';
     $('.kxct').remove();
+    $('div.bar').remove()
+    $('#magicbar_height').remove();
+    $('.relatedthread').remove()
+    $('.toolbar .filled').remove()
     $('#main-content').css('width', '100%');
     $('.threadbit .lastpost').css('width', '12%');
     $('.threadbit .views').css('width', '5%');
@@ -20,6 +24,9 @@
     $('.row').first().css('width', '95%');
     $('.tcell').css('border-color', '#bdc3cc')
     $('.trow.text-center .tcell').css('padding', '10px')
+    $('body').on( 'scroll', function() {
+        $('.toolbar .filled').remove()
+    })
 
     var elements = [
         '#sidebar_ads_container',
@@ -43,7 +50,11 @@
         '#gpt-adslot-4',
         '#gpt-adslot-5',
         '#qbox_widget',
-        '.viglinkAmazon'
+        '.viglinkAmazon',
+        '.relatedthread',
+        '.showthread-navigation-links',
+        'form[name=vbform] + div + .tbox',
+        '.flexitem .button'
     ];
 
     for (var i = 0, len = elements.length; i < len; i++) {
